@@ -24,7 +24,7 @@ INCLUDE(CTest)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
 
 # Location of additional CMake modules
-SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules/")
 
 # The default directories
 SET(DEFAULT_CONF_PATH ${CMAKE_INSTALL_PREFIX}/etc/freeDiameter CACHE PATH "Default location of freeDiameter configuration files")
