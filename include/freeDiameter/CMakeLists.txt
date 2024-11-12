@@ -188,7 +188,7 @@ if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
 	# Search for git binary to use
 	find_package(Git)
 	ADD_CUSTOM_TARGET(version_information
-				COMMAND ${CMAKE_COMMAND} -D GIT_EXECUTABLE="${GIT_EXECUTABLE}" -D SRC="${CMAKE_CURRENT_SOURCE_DIR}/version.h.in" -D DST="${CMAKE_CURRENT_BINARY_DIR}/version.h" -P "${CMAKE_SOURCE_DIR}/cmake/Modules/GetVersionWithGit.cmake"
+				COMMAND ${CMAKE_COMMAND} -D GIT_EXECUTABLE="${GIT_EXECUTABLE}" -D SRC="${CMAKE_CURRENT_SOURCE_DIR}/version.h.in" -D DST="${CMAKE_CURRENT_BINARY_DIR}/version.h" -P "${CMAKE_CURRENT_SOURCE_DIR}/../../cmake/Modules/GetVersionWithGit.cmake"
 				COMMENT "Retrieving version of the git repository"
 				)
 else (EXISTS "${CMAKE_SOURCE_DIR}/.git")
